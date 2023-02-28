@@ -22,21 +22,6 @@ class ListNode {
 
 class SolutionTest {
     /* Function to reverse the linked list */
-
-    public static ListNode reverse(ListNode node) {
-        ListNode prev = null;
-        ListNode current = node;
-        ListNode next = null;
-        while (current != null) {
-            next = current.next;
-            current.next = prev;
-            prev = current;
-            current = next;
-        }
-        node = prev;
-        return node;
-    }
-
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode dummy = new ListNode(0); // creating an dummy list
         ListNode curr = dummy; // intialising an pointer
