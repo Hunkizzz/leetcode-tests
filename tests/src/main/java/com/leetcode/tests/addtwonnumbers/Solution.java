@@ -54,10 +54,10 @@ class SolutionTest {
         ListNode listNode4 = new ListNode(5);
         ListNode listNode5 = new ListNode(4);
         ListNode listNode6 = new ListNode(6);
-        listNode2.next = listNode3;
         listNode.next = listNode2;
-        listNode5.next = listNode6;
+        listNode2.next = listNode3;
         listNode4.next = listNode5;
+        listNode5.next = listNode6;
         addTwoNumbers(listNode, listNode4);
     }
 }
