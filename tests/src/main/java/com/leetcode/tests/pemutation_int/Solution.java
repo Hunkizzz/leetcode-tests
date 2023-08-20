@@ -26,7 +26,7 @@ class Solution {
     }
 
     // Generating permutation using Heap Algorithm
-    void heapPermutation(int a[], int size, int n)
+    void heapPermutation(int a[], int size)
     {
         // if size becomes 1 then prints the obtained
         // permutation
@@ -34,7 +34,7 @@ class Solution {
             permutationList.add(Arrays.stream(a).boxed().collect(Collectors.toList()));
 
         for (int i = 0; i < size; i++) {
-            heapPermutation(a, size - 1, n);
+            heapPermutation(a, size - 1);
 
             // if size is odd, swap 0th i.e (first) and
             // (size-1)th i.e (last) element
@@ -62,13 +62,16 @@ class Solution {
     public static void main(String[] args) {
         int[] array = {1, 2, 3, 4, 5};
         Solution solution = new Solution();
-        solution.heapPermutation(array,5,5);
+        solution.heapPermutation(array,5);
         StringBuilder stringBuilder = new StringBuilder();
         System.out.println(solution.permutationList.size());
         for(List<Integer> el : solution.permutationList){
             stringBuilder.append("{");
-            for(Integer a: el){
+            for (int i = 0, elSize = el.size(); i < elSize; i++) {
+                Integer a = el.get(i);
                 stringBuilder.append("'").append(String.valueOf(a)).append("'");
+                if(i + 1 < el.size())
+                    stringBuilder.append(",");
             }
             stringBuilder.append("}\n");
         }
