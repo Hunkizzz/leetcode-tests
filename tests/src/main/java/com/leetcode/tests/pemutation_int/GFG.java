@@ -58,7 +58,7 @@ public class GFG {
 
     // Driver Code to test above functions
     public static void main(String[] args) {
-        int n = 3, k = 3;
+        int n = 16, k = 4;
         System.out.println(countPermutations(n, k));
 //        System.out.println(factorial(4));
     }

@@ -59,30 +59,6 @@ class Solution {
         input[b] = temp;
     }
 
-    public List<List<Integer>> permutation(int[] nums) {
-        if (nums.length == 0) {
-            return null;
-        }
-        int numberOfPermutations = factorial(nums.length);
-//        {1, 2, 3} {2, 1, 3}, {3, 2, 1}
-        List<List<Integer>> permutationList = new ArrayList<>();
-        int length = nums.length;
-        permutationList.add(Arrays.stream(nums).boxed().collect(Collectors.toList()));
-        for (int i = 1; i < numberOfPermutations; i++) {
-         int[] variant = {};
-            for (int j = 1; j < length; j++) {
-                int temp = nums[i - 1];
-
-            }
-        }
-        return permutationList;
-    }
-
-//    public List<Integer> permutate(){
-//
-//
-//    }
-
     public static void main(String[] args) {
         int[] array = {1, 2, 3, 4, 5};
         Solution solution = new Solution();

@@ -66,7 +66,7 @@ class Solution {
 
     public static void main(String[] args) {
         String s1 = "ab";
-        String s2 = "eidbaooo";
+        String s2 = "eidboaooo";
         Solution solution = new Solution();
 
         System.out.println(solution.checkInclusion(s1, s2));
