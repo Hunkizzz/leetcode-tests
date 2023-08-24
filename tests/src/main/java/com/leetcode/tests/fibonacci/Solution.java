@@ -16,9 +16,9 @@ class Solution {
         }
         return sum;
     }
-
+// 0 1 1 2 3
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.fib(10));
+        System.out.println(solution.fib(3));
     }
 }

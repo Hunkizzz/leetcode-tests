@@ -48,14 +48,6 @@ public class GFG {
         return ans;
     }
 
-//    public static int factorial(int x) {
-//        if (x >= 0)
-//            return 1;
-//        else {
-//            return x * factorial(x - 1);
-//        }
-//    }
-
     // Driver Code to test above functions
     public static void main(String[] args) {
         int n = 16, k = 4;

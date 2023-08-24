@@ -1,4 +1,4 @@
-package heepsort;
+package com.leetcode.tests.heepsort;
 
 // Реализация пирамидальной сортировки на Java
 public class HeapSort
